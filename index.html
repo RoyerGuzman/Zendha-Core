@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRUEBA TEÓRICA</title>
     <link rel="stylesheet" href="/css/masterpage.css">
 </head>
 <body>
@@ -31,19 +31,392 @@
                         </li>
                         <li>
                             <a href="#preguntas">Preguntas</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>                
+                        </li>                        
                     </ul>
                 </div>
             </div>
         </nav>
         <header class="header">
-
+            <h1>PRUEBA TEÓRICA</h1>
+            <h2>PRUEBA DESARROLLADOR</h2>
         </header>
         <section id="preguntas">
+            <section class="pregunta left">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            1
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe la diferencia entre una API rest y una API soap
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            De las principales diferencias encontramos que los servicios SOAP requieren de la comunicación a través de XML para poder comunicarse de forma adecuada, lo cual requiere que la persona que implementa métodos para un API SOAP, requiera conocer el funcionamiento para poder hacer nuevas integraciones,  en cambio bajo servicios REST, podemos tener mayor flexibilidad para implementación, siendo que tiene más flexibilidad para la comunicación entre sistemas, siendo JSON la forma de comunicación más usada, asimismo la implementación es más ágil debido a que esta no requiere conocer todo el aplicativo necesariamente para poder generar nuevas integraciones o módulos con diferentes funcionalidades
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta right">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            2
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            ¿Qué es GIT?
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            Git es un manejador de versiones, nos permite tener un control en los cambios que generamos, así como también nos provee ramas, las cuales sirven para hacer algunas variaciones del proyecto base, principalmente se usan para generar una versión de código la cual tenga alguna modificación o nueva implementación del código y alguien pueda validar esos cambios antes de pasarlo a producción, esto disminuye el riesgo de algún cambio no considerado, así mismo nos permite que si algo no funciona correctamente después del último cambio, poder regresar a una vista anterior del código y devolver el aplicativo al funcionamiento anterior, y todo gestionado por GIT, así delegamos esa parte de saber que archivos fueron tocados en ese periodo para poder subirlos o modificarlos en el código del aplicativo sin tener el riesgo de olvidar aplicar algún ajuste. asi mismo otros de los grandes beneficios de GIT es que nos permite el trabajo colaborativo de forma ordenada y controlada.
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta left">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            3
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe la diferencia entre clase, objeto, array, método y función.
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            Para poder entender las diferencias entre los diferentes elementos, sería oportuno poder definirlos un poco más a detalle para poder comprender las diferencias, pues algunos son tipos de datos, otros nos aportan lógica y otro estructura… 
+                            
+                        </div>
+                        <div class="oculto">
+                            <br>
+                            <br>
+                            <ul>
+                                <li>Clase: 
+                                    <br>
+                                    Las clases en programación suelen utilizarse para tener una estructura base para la generación de objetos, los cuales son un tipo de dato, y con la introducción de los datos que esta necesite, nos devolverá un código con un formato específico y ordenado que se adaptara a la forma en la que el programa accede a la información de algún elemento 
+                                </li>
+                                <br>
+                                <li>Objeto y Array: 
+                                    <br>
+                                    son tipos de datos no primitivos que nos aportan una colección de datos, pero la forma en la que estos lo guardan y cómo se accede a ellos es lo que los hace diferentes, en el caso de los Arrays, son una colección de datos que se van guardando segun la posicion en la que estos son almacenados, por lo que al querer acceder a su información lo haremos por un índice numérico, donde este apunta a la posición de la información que queremos recuperar, este tipo de dato no es el más adecuado para algunos casos de uso, en los cuales queremos acceder a alguna información a la cual no conocemos su posición, para ello se usan los Objetos, el cual en lugar de usar un índice numérico, utiliza un texto como referencia para acceder a la información, como puede ser un objeto “persona”, el cual tiene “nombre” y “edad”, utilizando alguna de las dos palabras referenciadas podremos acceder a la información de este fragmento sin necesidad de saber el orden de estos elementos dentro del objeto
+                                </li>
+                                <br>
+                                <li>
+                                    Método y función:
+                                    <br>    
+                                    Aunque Funcionalmente un Método y una función pueden ser muy parecidos en el sentido que ambos pueden o no recibir datos y realizar alguna acción lógica al ser llamados, la función es aquel proceso lógico declarado fuera de alguna clase u objeto, mientras que el método estará ligado al objeto en cuestión, siendo este, una propiedad del mismo, llevando lógica enfocada a la alteración de este objeto, o de realizar alguna acción relacionada con información que esté ligada a este objeto, lo cual nos brinda flexibilidad de poder crear funcionalidades dinámicas pero con un control de estructura que nos brinda el mismo objeto, en cambio una función suele estar declarada en algún proceso, que puede tener diferente grado de encapsulamiento y no se restringe necesariamente a solo un tipo de comportamiento.
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class=" bottonBody openBody">
+                            <button>Ver completo</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta right">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            4
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe los comandos para agregar y commitear una carpeta por GIT
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            <p>Tanto para agregar una carpeta/directorio como archivos independientes se usa el comando</p>
+                            <pre>git add "ruta y nombre de carpeta"</pre>
+                            
+                            <p>La diferencia es que al agregar la carpeta, nos agregara al stage todas las subcarpetas y archivos que estén dentro de ésta, en cambio al agregar un archivo se tiene que especificar el nombre y extensión del mismo, asi mismo tambien se puede usar el siguiente comando para agregar todos los archivos nuevos y modificados al stage</p>
+                            
+                            <pre>git add --all</pre>
+                            
+                            <p>posteriormente para que estos cambios se quede guardados se requiere hacer el commit del mismo, el cual sería:</p>
+                            
+                            <pre>git commit -m "Mensaje para el commit"</pre>
+                            
+                            ejemplo:
+                            <pre>git commit -m "Corrigiendo bug de css"</pre>
 
+                            <p>Es importante tener en cuenta que antes de generar un commit tenemos que revisar la rama en la que estamos trabajando para que podamos gestionar correctamente los cambios y despliegues </p>
+
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta left">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            5
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe la diferencia entre PHP CGI, fastCGI y FPM
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            <p>Las diferencias entre las diferentes formas de poder utilizar php en nuestros servidores van desde temas de rendimiento hasta de complejidad de configuración, así que entremos un poco más a detalle</p>
+                            
+                        </div>
+                        <div class="oculto">
+                            <p>Las diferencias entre ellas residen desde el tiempo en que aparecieron y las problemáticas que fueron representando a lo largo del tiempo, siendo la siguiente un modelo mas completo para dar un mejor resultado en los procesos en el servidor, como son mejora de rendimiento y accesibilidad</p>                
+                            <p>CGI, siendo el modelo iniciar, traía características como fácil instalación, pero a costa de una afectación en el rendimiento, así como también se considera menos seguro por la forma en la que se ejecutan</p>
+                            <p>FastCGI, fue la evolución del CGI, brindando como características principales el que los archivos php no fueran propiedad del mismo, así como una mejora en el rendimiento a costa de un mayor uso de memoria, pero incrementó la complejidad de configuración
+                            </p>
+                            <p>FPM, siendo la última forma y la más recomendada, es una manera de manejar servidores que utilicen archivos php para trabajar, pero con mejor rendimiento y con mayor capacidad de tráfico</p>
+                            <p>Anexo una pequeña tabla que nos podrá marcar un poco mas al respecto sobre ello</p>
+                            <img src="/img/home/tablaphps.png" alt="imagen de tipos de instalacion php" loading="lazy">
+                        </div>
+                        <div class=" bottonBody openBody">
+                            <button>Ver completo</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta right">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            6
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe un selector de elemento DOM con Javascript sin utilizar ninguna
+                            librería
+                            
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            <div class="selectores">
+                                <p>Los selectores para el DOM son principalmente p</p>
+                                <ul>
+                                    <li>Por el nombre de la etiqueta html</li>
+                                    <li>Por la clase que este elemento contenga</li>
+                                    <li>Por el Id que contenga</li>
+                                </ul>
+                                <p>Veamos el codigo para cada selector asi como la forma en la que estos pueden interactuar</p>
+                                <div class="botonesSelectores">
+                                    <button id="porEtiquetas">Por Etiqueta</button>
+                                    <button id="porClase">Por Clase</button>
+                                    <button id="porId">Por Id</button>
+                                </div>
+                                <div id="cajasCodigoSelectores">
+
+                                    <pre class="etiquetas">document.getElementsByTagName("p")</pre>
+                                    <pre class="clase">document.getElementsByClassName("parafoConClase");</pre>
+                                    <pre class="porId">document.getElementById("parafoConId")</pre>
+                                </div>
+                                    
+                                <div class="parrafosPrueba" id="parrafosPrueba">
+
+                                    <p>Yo soy un parrafo sin Id y sin clases, por lo que mi fondo cambiara solo cuando seleccionen "Por Etiquetas"</p>
+                                    <p class="parafoConClase">Yo soy un parrafo sin Id y pero con la clase "parafoConClase", por lo que mi fondo cambiara cuando seleccionen "Por Etiquetas o por Clase"</p>
+                                    <p class="parafoConClase" id="parafoConId">Yo soy un parrafo Con Id y con la clase "parafoConClase", por lo que mi fondo cambiara cuando seleccionen "Por Etiquetas, por Clase, por Id"</p>
+                                </div>
+                                <p style="margin-top: 3rem;">Tambien otra forma de selector para elementos en el DOM puedes ser la siguiente</p>
+                                <pre>document.querySelector("tag");<br>document.querySelector(".myClass");<br>document.querySelector("#myId");</pre>
+
+                                    
+                                
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta left">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            7
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe la diferencia entre paradigma POO y paradigma funcional
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            El paradigma funcional, como su nombre lo describe, está basado en bloques lógicos, donde enviamos información y este nos regresa un resultado a partir de ello, en cambio en el paradigma de Programación Orientado a Objetos, tenemos algunas herramientas adicionales, como son la Abstracción, el Encapsulamiento, la Herencia y el Polimorfismo, el cual nos brinda mayor grado de reutilizacion de codigo, e incremento de alguna funcionalidad de forma sencilla sin necesariamente afectar los objetos originales y sus propiedades, si no extendiendo las mismas a través de estas herramientas que nos brinda este paradigma
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta right">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            8
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe los puntos a tener en cuenta para que no puedan realizar una
+                            inyección SQL tras recibir los datos por cualquier método del protocolo HTTP
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            <p>El factor más importante a tener en cuenta para este caso, es la sanitización de datos, la cual consiste en procesar el texto antes de enviarlo al proceso final, evitando que caracteres que existen dentro de estas peticiones malintencionadas, puedan afectar el funcionamiento lógico de nuestro programa </p>
+                            
+                            <p>Pero tambien podemos considerar puntos adicionales como lo son...</p>
+                            
+                        </div>
+                        <div class="oculto">
+                            <p>Tener en cuenta es tener programado en la recepción de datos, una validación de los mismos, y que estos cumplan las características que se están solicitando para el correcto funcionamiento de la aplicación, </p>
+                            <p>Así mismo se puede agregar medidas de seguridad adicionales como ReCaptcha, para evitar que se puedan enviar peticiones de forma sistematizada con algún programa.
+                            </p>
+                            <p>Dependiendo del grado de seguridad que se busque implementar se puede agregar reglas adiciones, como que las peticiones sólo puedan realizarse bajo url específicas, 
+                            </p>
+                            <p>Más detalles a tener en cuenta para evitar estos problemas de seguridad es tener las librerías y sistemas actualizados, para evitar vulnerabilidades que pueda aprovechar terceros para poder generar funcionamientos nos esperados en la aplicación, siendo la inyección SQL solo una de las variables</p>
+                            <p>Para sistemas internos, donde la seguridad debe ser total, y los puntos de acceso no están disponibles al públicos, se puede considerar el registro de acciones y así como las credenciales de la persona que realizó dicha acción, pues junto con los puntos anteriores, también se puede identificar las credenciales que están buscando generar una vulnerabilidad</p>
+                        </div>
+                        <div class="bottonBody openBody">
+                            <button>Ver completo</button>
+                        </div>
+                     
+                    </div>
+                </div>
+            </section>
+            <section class="pregunta left active">
+                <div class="linea-vertical"></div>
+                <div class="contenedor-rombo">
+                    <div class="numero">
+                        <span>
+                            9
+                        </span>
+                    </div>
+                </div>
+                <div class="contenido-pregunta">
+                    <header>
+                        <div class="minirombo">
+                            <div class="miniminirombo"></div>
+                        </div>
+                        <div class="duda">
+                            Escribe una sentencia SQL para leer los campos id, nombre, salario y puesto
+                            de la tabla empleados cuyo salario sea mayor a 25000
+                        </div>
+                    </header>
+                    <div class="body">
+                        <div class="princial">
+                            <p>El query sql corresponderia al siguiente texto</p>
+                            <pre>select id, nombre, salario, puesto from empleados where salario > 25000</pre>
+                            <p>Se ha levantado un backend cuya ruta es: <a target="_blank" href="https://backend.zendha.core.fundatusitioweb.com/control">backend.zendha.core.fundatusitioweb.com</a></p>
+                            se pueden acceder con las credenciales:
+                            <pre>user: ZendhaCore <br>pass: ZendhaCore</pre>
+                            <p>asi podran validar la información que consultaremos en el siguiente apartado, así como registrar nuevos empleados, modificar sueldos y borrar registros, para tener un sitio dinámico conectado a un backend que nos brinda la información que requerimos, podremos dar nuevos puestos, para con ello tambien tener filtro dinamico en nuestras consultas manejando el filtro de sueldo y de puesto a la vez en este API Rest
+                            </p>
+                        </div>
+                        <div id="filtrosApi">
+                            <form  id="formularioApi">
+                                <div class="elementoForm">
+
+                                    <label for="puesto">Puesto</label>
+                                    <select name="puesto" id="SelectApiRest" required>
+                                        <option >puesto</option>
+                                    </select>
+                                </div>
+                                    
+                                <div class="elementoForm">
+
+                                    <label for="salario">Salario</label>
+                                    <input type="number" name="salario" value="25000">
+                                </div>
+                                <div class="consultar">
+                                    <button type="submit">Consultar</button>
+                                </div>
+                                <div class="resultados">
+                                    <table id="resultadosConsulta">
+                                        <tr>
+                                          <th>Id</th>
+                                          <th>Nombre</th>
+                                          <th>Salario</th>
+                                          <th>Puesto</th>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
         </section>
         
         
@@ -51,7 +424,7 @@
         
     </main>
     <footer id="footer">
-        <p>Sitio creado por <span>Rogelio Guzmán Pastor</span> para <span>Zendha</span></p>
+        <p>Sitio creado por <span>Rogelio Guzmán Pastor</span> para <span>Zendha Core</span></p>
     </footer>
     <script src="/js/app.js"></script>
 </body>

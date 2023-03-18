@@ -31,13 +31,17 @@ html, body
     height: 100%
 body 
     font-size: 1.6rem
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 // ----------------------------------------------------------------------
 //          home
 // ----------------------------------------------------------------------
 body
+    background: $semiwhite
     #home
-        padding: 5rem
+        padding: 7rem 1rem 1rem 1rem
+        @media screen and (min-width: 992px)
+            padding: 7rem
         .nav
             width: 100%
             min-height: 5rem
@@ -49,6 +53,7 @@ body
             position: fixed
             top: 0
             left: 0
+            z-index: 2
             .contenedor
                 max-width: 140rem
                 width: 100%
@@ -174,6 +179,337 @@ body
             
         .header
         #preguntas
+            max-width: 140rem
+            margin: 0 auto
+            width: 100%
+            min-height: 70rem
+            .pregunta
+                
+                min-height: 20rem
+                width: 95%        
+                margin: 0 auto     
+                position: relative
+                padding-top: 1.5rem
+                .linea-vertical
+                    position: absolute
+                    min-height: 100%
+                    background: #cecece
+                    // background: red
+                    width: 2px
+                    top: 0
+                    right: 0
+                    left: 0
+                    margin: auto
+                .contenedor-rombo
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 1rem 1.5rem 1.5rem 1.5rem
+                    .numero
+                        height: 5rem   
+                        width: 5rem   
+                        transform: rotate(45deg)                    
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        background: #fff
+                        border: 1px solid #cecece
+                        span
+                            display: block                        
+                            transform: rotate(-45deg)
+                            font-size: 1.7em
+                            line-height: 0
+                .contenido-pregunta
+                    width: 100%                
+                    transition: all 0.2s    
+                    @media screen and (min-width: 992px)
+                        width: 49%
+                    header
+                        min-height: 5rem
+                        display: flex                        
+                        background: $color4
+                        position: relative
+                        color: #fff                                                
+                        width: 100%
+                        .duda
+                            width: 90%
+                            min-height: 100%
+                            background: $color2                            
+                            display: flex
+                            align-items: center
+                    .body
+                        border-bottom: 2px solid #cecece
+                        min-height: 5rem
+                        width: 100%
+                        padding: 2rem
+                        z-index: 1
+                        background: $semiwhite    
+                        text-align: justify                    
+                        @media screen and (max-width: 991px)
+                            position: relative
+                        @media screen and (min-width: 992px)
+                            min-width: 101.9%
+                            padding: 2rem 5.2% 2rem 1rem
+                        pre
+                            margin: 1.5rem 
+                            background: #fff
+                            border: 1px solid #cecece
+                            padding: 0.5rem
+                        p
+                            margin-bottom: 1rem
+                        .oculto
+                            display: none
+                            img 
+                                width: 80rem
+                                max-width: 100%
+                        .princial
+                            ul
+                                padding: 1rem 2rem
+                                li
+                            #cajasCodigoSelectores
+                                min-height: 8rem
+                                display: flex
+                                align-items: center                                
+                                pre
+                                    display: none
+                                    width: 100%
+                                pre.active 
+                                    display: block
+                            .parrafosPrueba                                                                
+                                max-width: 90%
+                                margin: 0 auto
+                                background: #fff
+                                padding: 1rem      
+                                p 
+                                    transition: all 0.2s
+                                    padding: 0.5rem
+                                p.active
+                                    background: $semidark
+                                    color: $semiwhite    
+
+                            .botonesSelectores
+                                display: flex
+                                justify-content: space-between
+                                margin-top: 2rem
+                                button
+                                    display: inline-block
+                                    margin: 0 auto
+                                    border: none
+                                    background: $color3
+                                    color: $semiwhite
+                                    padding: 1rem 4rem
+                                    cursor: pointer
+                                    transition: all 0.2s
+                                    box-shadow: 0.5rem 0.5rem 0.5rem rgba($color2, 0.4)
+                                    &:active
+                                        transform: scale(0.9)
+                                        box-shadow: 0.3rem 0.3rem 0.3rem rgba($color2, 0.4)
+                        #filtrosApi
+                            form
+                                max-width: 50rem
+                                width: 100%
+                                display: flex
+                                justify-content: space-around
+                                margin: 0 auto
+                                flex-wrap: wrap
+                                .elementoForm
+                                    width: 100%      
+                                    margin-bottom: 1rem                              
+                                    @media screen and (min-width: 992px)
+                                        width: 45%
+                                    select, input
+                                        display: inline-block
+                                        border: none
+                                        min-width: 10rem
+                                        padding: 0.5rem
+                                .consultar
+                                    width: 100%
+                                    text-align: center
+                                    margin-top: 2rem
+                                    button
+                                        display: inline-block
+                                        margin: 0 auto
+                                        border: none
+                                        background: $color3
+                                        color: $semiwhite
+                                        padding: 1rem 4rem
+                                        cursor: pointer
+                                        transition: all 0.2s
+                                        box-shadow: 0.5rem 0.5rem 0.5rem rgba($color2, 0.4)
+                                        &:active
+                                            transform: scale(0.9)
+                                            box-shadow: 0.3rem 0.3rem 0.3rem rgba($color2, 0.4)
+                            .resultados
+                                width: 100%
+                                #resultadosConsulta
+                                    width: 95%
+                                    max-width: 70rem
+                                    margin-top: 3rem                                                                        
+                                    th
+                                        text-align: center
+                                        background: $color4
+                                        color: $semiwhite
+                                        padding: 1rem
+                                        &:nth-child(1)
+                                            max-width: 10%
+                                        &:nth-child(2)
+                                            max-width: 50%
+                                        &:nth-child(3)
+                                            max-width: 20%
+                                        &:nth-child(4)
+                                            max-width: 20%
+                                    td 
+                                        border-bottom: 1px solid $color1
+                                        padding: 1rem
+                                            
+                                        
+
+                        .bottonBody        
+                            margin-top: 2rem                    
+                            button
+                                display: block
+                                margin: 0 auto
+                                border: none
+                                background: $color3
+                                color: $semiwhite
+                                padding: 1rem 4rem
+                                cursor: pointer
+                                transition: all 0.2s
+                                box-shadow: 0.5rem 0.5rem 0.5rem rgba($color2, 0.4)
+                                &:active
+                                    transform: scale(0.9)
+                                    box-shadow: 0.3rem 0.3rem 0.3rem rgba($color2, 0.4)
+
+
+            .pregunta.left
+                .contenido-pregunta
+                    header
+                        justify-content: flex-end
+                        .duda
+                            padding: 1rem 3rem 1rem 1rem
+                        .minirombo
+                            position: absolute
+                            width: 3rem
+                            height: 3rem
+                            background: $semiwhite
+                            margin: auto
+                            z-index: 1
+                            transform: rotate(45deg)
+                            display: none
+                            @media screen and (min-width: 992px)
+                                display: block
+                                top: 0
+                                bottom: 0
+                                left: auto
+                                right: -4.3%
+                            @media screen and (min-width: 1200px)
+                                display: block
+                                top: 0
+                                bottom: 0
+                                left: auto
+                                right: -3.3%
+                            @media screen and (min-width: 1400px)
+                                top: 0
+                                bottom: 0
+                                left: auto
+                                right: -2.3%
+                            .miniminirombo
+                                width: 2.5rem
+                                height: 2.5rem
+                                background: $color4
+                                position: absolute
+                                margin: auto
+                                @media screen and (min-width: 992px)
+                                    top: -31%
+                                    bottom: 0
+                                    left: 0
+                                    right: -28%
+                                @media screen and (min-width: 1200px)
+                                    top: -41%
+                                    bottom: 0
+                                    left: 0
+                                    right: -38%
+                                @media screen and (min-width: 1400px)
+                                    top: -63%
+                                    bottom: 0
+                                    left: 0
+                                    right: -60%
+            .pregunta.right
+                .contenido-pregunta
+                    display: flex
+                    // justify-content: flex-end
+                    flex-wrap: wrap
+                    margin-left: auto
+                    header
+                        .duda
+                            padding: 1rem 1rem 1rem 3rem
+                        .minirombo
+                            position: absolute
+                            width: 3rem
+                            height: 3rem
+                            background: $semiwhite
+                            margin: auto
+                            z-index: 1
+                            transform: rotate(45deg)
+                            display: none
+                            @media screen and (min-width: 992px)
+                                display: block
+                                top: 0
+                                bottom: 0
+                                right: auto
+                                left: -4.3%
+                            @media screen and (min-width: 1200px)
+                                display: block
+                                top: 0
+                                bottom: 0
+                                right: auto
+                                left: -3.3%
+                            @media screen and (min-width: 1400px)
+                                top: 0
+                                bottom: 0
+                                right: auto
+                                left: -2.3%
+                            .miniminirombo
+                                width: 2.5rem
+                                height: 2.5rem
+                                background: $color4
+                                position: absolute
+                                margin: auto
+                                @media screen and (min-width: 992px)
+                                    bottom: -31%
+                                    top: 0
+                                    right: 0
+                                    left: -28%
+                                @media screen and (min-width: 1200px)
+                                    bottom: -41%
+                                    top: 0
+                                    right: 0
+                                    left: -38%
+                                @media screen and (min-width: 1400px)
+                                    bottom: -63%
+                                    top: 0
+                                    right: 0
+                                    left: -60%
+                    .body
+                        margin-left: -1.9%
+            .pregunta.left.active, .pregunta.right.active
+                .contenido-pregunta                    
+                    width: 100%!important
+                    margin-top: 1rem
+                    .minirombo
+                        display: none
+                    .duda
+                        margin: 0 auto
+                    .body
+                        position: relative
+                        padding: 2rem
+                        min-width: 100%
+                        margin: 0 auto
+                        .oculto
+                            display: block
+                        
+                        
+
     #footer
         background: $color1
         color: $semiwhite
@@ -181,7 +517,7 @@ body
         display: flex
         align-items: center
         justify-content: center
-        margin-top: 30px
+        margin-top: 30px        
         box-shadow: 0 0 30px $color1
         span
             font-weight: bold
