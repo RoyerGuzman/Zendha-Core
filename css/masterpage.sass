@@ -1,0 +1,187 @@
+// ----------------------------------------------------------------------
+//          variables de colores
+// ----------------------------------------------------------------------
+
+$color1: #260d33
+$color2: #003f69
+$color3: #106b87
+$color4: #157a8c
+$color5: #b3aca4
+
+$semiwhite: #f5f5f5
+$semidark: #222
+// ----------------------------------------------------------------------
+//          Generales
+// ----------------------------------------------------------------------    
+    
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box 
+    box-sizing: border-box
+html 
+    box-sizing: border-box
+    font-size: 62.5% //Reset para Rems -62.5% = 10px de 16px 
+*, *:before, *:after
+    box-sizing: inherit
+    margin: 0 
+    padding: 0
+
+html, body 
+    position: relative
+    height: 100%
+body 
+    font-size: 1.6rem
+
+// ----------------------------------------------------------------------
+//          home
+// ----------------------------------------------------------------------
+body
+    #home
+        padding: 5rem
+        .nav
+            width: 100%
+            min-height: 5rem
+            background: $color1
+            color: $semiwhite
+            display: flex
+            align-items: center
+            box-shadow: 0 0px 30px $color1
+            position: fixed
+            top: 0
+            left: 0
+            .contenedor
+                max-width: 140rem
+                width: 100%
+                padding: 0 1.5rem
+                margin: 0 auto
+                display: flex
+                justify-content: space-between
+                position: relative
+                .logo
+                    display: flex
+                    align-items: center
+                    span
+                        color: $semiwhite
+                .botton
+                    border: 1px solid #fff
+                    min-width: 4rem                    
+                    min-height: 4rem                    
+                    border-radius: 0.5rem
+                    position: relative
+                    transition: all 0.2s
+                    cursor: pointer
+                    @media screen and (min-width: 768px)
+                        display: none
+                    &:hover
+                        span
+                            transition: all 0.2s
+                            background: $semiwhite!important
+                    &:active
+                        transform: scale(0.9)                        
+                    span
+                        min-width: 70%
+                        display: block
+                        position: absolute
+                        left: 15%
+                        right: 15%
+                        min-height: 2px
+                        &:nth-last-child(1)
+                            top: 20%
+                            background: $color5                                                        
+                        &:nth-last-child(2)
+                            top: 45%
+                            background: $color5                            
+                        &:nth-last-child(3)                        
+                            top: 70%
+                            background: $color5                            
+                .menu
+                    .close
+
+                    .enlaces           
+                        list-style: none
+                        padding: 0             
+                        li
+                            a
+                                text-decoration: none
+                                color: $color5
+                                transition: all 0.2s
+                                &:hover
+                                    color: #fff
+                @media screen and (max-width: 767px)
+                    .menu
+                        position: fixed
+                        min-height: 100vh
+                        min-width: 100vw
+                        background: #000
+                        top: 0
+                        left: 0        
+                        padding-top: 5.5rem       
+                        left: 100vw      
+                        transition: all 0.5s       
+                        .close   
+                            width: 4rem     
+                            height: 4rem 
+                            position: absolute    
+                            top: 1rem
+                            right: 1rem
+                            border: 1px solid $semiwhite
+                            border-radius: 50%
+                            cursor: pointer
+                            &:hover
+                                span
+                                    transition: all 0.2s
+                                    background: $semiwhite!important
+                            &:active
+                                transform: scale(0.9)    
+                            span
+                                min-width: 70%
+                                display: block
+                                position: absolute
+                                left: 15%
+                                right: 15%
+                                min-height: 2px
+                                &:nth-last-child(1)
+                                    top: 50%
+                                    background: $color5                                                        
+                                    transform: rotate(45deg)
+                                &:nth-last-child(2)
+                                    top: 50%
+                                    background: $color5                   
+                                    transform: rotate(-45deg)
+                        .enlaces
+                            li
+                                display: block
+                                padding: 15px
+                                cursor: pointer
+                                transition: all 0.2s
+                                &:hover
+                                    background: $color3
+                                    a 
+                                        color: $semiwhite
+                    .menu.active
+                        left: 0
+
+                @media screen and (min-width: 768px)
+                    .menu
+                        .close
+                            display: none
+                        .enlaces
+                            align-items: center
+                            display: flex
+                            li 
+                                margin: 0 1.5rem                                                         
+                                
+            
+        .header
+        #preguntas
+    #footer
+        background: $color1
+        color: $semiwhite
+        min-height: 10rem
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 30px
+        box-shadow: 0 0 30px $color1
+        span
+            font-weight: bold
