@@ -285,7 +285,8 @@ body {
               flex-wrap: wrap; }
               body #home #preguntas .pregunta .contenido-pregunta .body #filtrosApi form .elementoForm {
                 width: 100%;
-                margin-bottom: 1rem; }
+                margin-bottom: 1rem;
+                display: flex; }
                 @media screen and (min-width: 992px) {
                   body #home #preguntas .pregunta .contenido-pregunta .body #filtrosApi form .elementoForm {
                     width: 45%; } }
