@@ -185,7 +185,8 @@ body {
             align-items: center;
             justify-content: center;
             background: #fff;
-            border: 1px solid #cecece; }
+            border: 1px solid #cecece;
+            border-radius: 5px; }
             body #home #preguntas .pregunta .contenedor-rombo .numero span {
               display: block;
               transform: rotate(-45deg);
@@ -203,13 +204,15 @@ body {
             background: #157a8c;
             position: relative;
             color: #fff;
-            width: 100%; }
+            width: 100%;
+            border-radius: 5px; }
             body #home #preguntas .pregunta .contenido-pregunta header .duda {
               width: 90%;
               min-height: 100%;
               background: #003f69;
               display: flex;
-              align-items: center; }
+              align-items: center;
+              border-radius: 5px; }
           body #home #preguntas .pregunta .contenido-pregunta .body {
             border-bottom: 2px solid #cecece;
             min-height: 5rem;
@@ -264,6 +267,7 @@ body {
               justify-content: space-between;
               margin-top: 2rem; }
               body #home #preguntas .pregunta .contenido-pregunta .body .princial .botonesSelectores button {
+                border-radius: 5px;
                 display: inline-block;
                 margin: 0 auto;
                 border: none;
@@ -300,6 +304,7 @@ body {
                 text-align: center;
                 margin-top: 2rem; }
                 body #home #preguntas .pregunta .contenido-pregunta .body #filtrosApi form .consultar button {
+                  border-radius: 5px;
                   display: inline-block;
                   margin: 0 auto;
                   border: none;
@@ -337,6 +342,7 @@ body {
             body #home #preguntas .pregunta .contenido-pregunta .body .bottonBody {
               margin-top: 2rem; }
               body #home #preguntas .pregunta .contenido-pregunta .body .bottonBody button {
+                border-radius: 5px;
                 display: block;
                 margin: 0 auto;
                 border: none;
@@ -361,7 +367,8 @@ body {
           margin: auto;
           z-index: 1;
           transform: rotate(45deg);
-          display: none; }
+          display: none;
+          border-radius: 5px; }
           @media screen and (min-width: 992px) {
             body #home #preguntas .pregunta.left .contenido-pregunta header .minirombo {
               display: block;
@@ -387,7 +394,8 @@ body {
             height: 2.5rem;
             background: #157a8c;
             position: absolute;
-            margin: auto; }
+            margin: auto;
+            border-radius: 5px; }
             @media screen and (min-width: 992px) {
               body #home #preguntas .pregunta.left .contenido-pregunta header .minirombo .miniminirombo {
                 top: -31%;
