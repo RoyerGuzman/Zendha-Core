@@ -78,9 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // funcion api
-    // fetch('https://backend.zendha.core.fundatusitioweb.com/api/puestos',{
     let SelectApiRest = document.getElementById('SelectApiRest');
-    fetch('https://backzendha.test/api/puestos',{
+    fetch('https://backend.zendha.core.fundatusitioweb.com/api/puestos',{
+    // fetch('https://backzendha.test/api/puestos',{
             method: 'GET',            
     })
         .then(res => res.json())
@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
     formularioApi.addEventListener('submit', function(e){
         e.preventDefault();
         const datosFormulario = new FormData(formularioApi);        
-        // fetch('https://backend.zendha.core.fundatusitioweb.com/api/empleados',{
-        fetch('https://backzendha.test/api/empleados',{
+        fetch('https://backend.zendha.core.fundatusitioweb.com/api/empleados',{
+        // fetch('https://backzendha.test/api/empleados',{
             method: 'POST',
             body: datosFormulario
         })
